@@ -1,0 +1,81 @@
+:root {
+    --cell-size: 25px;
+    --grid-width: 50;
+    --page-size: calc(var(--cell-size) * var(--grid-width));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: var(--page-size);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-width), 1fr);
+    grid-template-rows: repeat(var(--grid-width), 1fr);
+    gap: 1px; /* Adjust the gap to ensure equal spacing */
+}
+
+.grid-item {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: lightgray;
+}
+
+.color-bar {
+    position: fixed; /* Change from absolute to fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.clear-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.randomize-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rave-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #ff00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

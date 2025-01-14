@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #1b4949; /* Deep Sage Green */
+    --secondary-color: #F5F5DC; /* Beige */
+    --tertiary-color: #FFA07A; /* Light Salmon */
+    --quaternary-color: #556B2F; /* Dark Olive Green */
+
+    --primary-font: 'Merriweather', serif;
+    --primary-font-weight: 400;
+    
+    --small-font-size: 0.5rem;
+    --primary-font-size: 1rem;
+    --medium-font-size: 1.5rem;
+    --large-font-size: 2rem;
+    --secondary-font: 'Times New Roman', serif;
+
+    --icon-size: 60px;
+}
+
+body {
+    max-width: 800px;
+    min-width: 400px;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me img {
+    width: auto;
+    height: 150px;
+    border-radius: 25%;
+    margin: 10px;
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.rotating-gear {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

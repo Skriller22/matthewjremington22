@@ -1,0 +1,247 @@
+:root {
+    --primary-color: #1b4949; /* Deep Sage Green */
+    --secondary-color: #F5F5DC; /* Beige */
+    --tertiary-color: #FFA07A; /* Light Salmon */
+    --quaternary-color: #556B2F; /* Dark Olive Green */
+
+    --primary-font: 'Merriweather', serif;
+    --primary-font-weight: 400;
+    
+    --small-font-size: 0.5rem;
+    --primary-font-size: 1rem;
+    --medium-font-size: 1.5rem;
+    --large-font-size: 2rem;
+    --secondary-font: 'Times New Roman', serif;
+
+    --icon-size: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+html, body { /* Ensures the color extends below the footer */
+    height: 100%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    max-width: 400px;
+    min-width: 350px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header{
+    grid-column: 2 / -1;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: var(--tertiary-color);
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.contact img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.me img {
+    width: auto;
+    height: 120px;
+    border-radius: 25%;
+    margin: 10px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 5px;
+}
+
+.socials img {
+    width: 25px;
+    height: 25px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro div, .intro nav {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.intro ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    /* position:fixed;
+    left: calc(50% - 200px);
+    bottom: 0; */
+}
+
+body::after {
+    content: "";
+    display: block;
+    height: 50vh; /* Ensures the color extends below the footer */
+    background-color: var(--primary-color); /* Same color as the footer */
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr;
+}
+
+#p-title {
+    text-align: center;
+    font-size: var(--large-font-size);
+    font-weight: var(--primary-font-weight);
+    font-family: var(--primary-font);
+}
+
+#mail-form {
+    max-width: 690px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#mail-form fieldset{
+    border: none;
+    display: block;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#mail-form legend {
+    text-align: center;
+    font-size: var(--medium-font-size);
+    font-weight: var(--primary-font-weight);
+    font-family: var(--primary-font);
+}
+
+#mail-form input, 
+#mail-form textarea {
+    box-sizing: border-box;
+    font-size: larger;
+    margin: 10px;
+    padding: 3px 5px 18px 5px;
+    width: 90%;
+}
+
+#mail-form input[type="submit"] {
+    background-image: linear-gradient(to right, var(--primary-color), var(--quaternary-color));
+    box-shadow: 1px 1px 5px 1px var(--quaternary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+    margin: 10px;
+}
+
+#mail-form input[type="submit"]:hover {
+    background-image: linear-gradient(to right, var(--quaternary-color), var(--primary-color));
+}
+
+/* Functionality for rotating gear animations */
+.rotating-gear {
+    display: inline-block;
+    animation: rotate 2s linear infinite;
+    vertical-align: 0.1rem;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
