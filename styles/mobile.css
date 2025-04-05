@@ -69,10 +69,14 @@ header nav a {
     color: var(--secondary-color);
     text-decoration: none;
     padding: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 header nav a:hover {
-    background-color: var(--tertiary-color);
+    background-image: linear-gradient(to bottom, var(--tertiary-color), var(--secondary-color));
+    transition: background-image 0.3s ease-in-out;
+    color: var(--primary-color);
 }
 
 section {
