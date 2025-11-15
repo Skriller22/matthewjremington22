@@ -1,0 +1,156 @@
+:root {
+    --primary-font: 'Arial', sans-serif;
+    --secondary-font: 'Georgia', serif;
+    --primary-color: #522c25;
+    --secondary-color: #01271a;
+    --tertiary-color: #761c1f;
+    --dark-color: #010913;
+    --light-color: #e7ddce;
+    --extra-color: #cc7aff;
+    --cyber-light-color: #FFF23C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: var(--tertiary-color);
+    color: var(--light-color);
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 3rem;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.category-link {
+    border-radius: 0 5px 0 5px;
+}
+
+.category-link:hover {
+    padding-left: 1rem;
+    padding-right: -10px;
+    transition: all 0.3s ease;
+}
+
+.rpg-resources {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border-radius: 0 15px 15px 0;
+    padding: 15px;
+    margin: 10px 0;
+    margin-right: 1rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    display: grid;
+    gap: 10px;
+    border-bottom: 6px solid var(--dark-color);
+}
+
+.rpg-resources h2 {
+    margin: 0;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+.rpg-resource-list {
+    padding: 0;
+    margin: 10px 0 0 0;
+    grid-row: 2;
+}
+
+.rpg-resources li {
+    list-style: none;
+    margin: 8px 0;
+}
+
+#dnd-resource-list {
+    padding: 0;
+}
+
+#dnd-resources {
+    background-color: var(--tertiary-color);
+}
+
+#dnd-resource {
+    border-bottom: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#dnd-resource:hover {
+    border-bottom: 1px solid var(--light-color);
+    border-left: 1px solid var(--light-color);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+#cyberpunk-resources {
+    background-color: var(--extra-color);
+    color: var(--dark-color);
+}
+
+#cyberpunk-resource {
+    color: var(--dark-color);
+    border-bottom: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#cyberpunk-resource:hover {
+    border-bottom: 1px solid var(--cyber-light-color);
+    border-left: 1px solid var(--cyber-light-color);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+#another-rpg-resources {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    display: none;
+}
+
+#another-rpg-resource {
+    border-bottom: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#another-rpg-resource:hover {
+    border-bottom: 1px solid var(--light-color);
+    border-left: 1px solid var(--light-color);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
