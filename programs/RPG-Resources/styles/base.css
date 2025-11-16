@@ -33,9 +33,14 @@ h1 {
     margin-left: 2rem;
 }
 
-p {
+.rpg-resources-overview p {
     font-size: 1.2rem;
     margin: 0 0 1rem 3rem;
+}
+
+.development-notes p {
+    font-size: 1.2rem;
+    margin:1rem 3rem;
 }
 
 li {
